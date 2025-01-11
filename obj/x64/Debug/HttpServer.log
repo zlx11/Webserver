@@ -1,0 +1,12 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.10.129”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  server.c
+D:\vs C++\HttpServer\server.c(326,10): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+D:\vs C++\HttpServer\server.c(326,10): warning :   326 |    *to = hexit(from[1]) * 16 + hexit(from[2]);
+D:\vs C++\HttpServer\server.c(326,10): warning :       |          ^~~~~
+  正在链接对象
+  HttpServer.vcxproj -> D:\vs C++\HttpServer\bin\x64\Debug\HttpServer.out

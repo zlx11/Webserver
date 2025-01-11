@@ -1,0 +1,29 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.10.129”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.c
+D:\vs C++\HttpServer\main.c(13,24): warning : conversion from ‘int’ to ‘short unsigned int’ may change value [-Wconversion]
+D:\vs C++\HttpServer\main.c(13,24): warning :    13 |  unsigned short port = atoi(argv[1]);
+D:\vs C++\HttpServer\main.c(13,24): warning :       |                        ^~~~
+D:\vs C++\HttpServer\main.c(12,2): warning : ignoring return value of ‘chdir’, declared with attribute warn_unused_result [-Wunused-result]
+D:\vs C++\HttpServer\main.c(12,2): warning :    12 |  chdir(argv[2]); //�������л������̵ĸ�Ŀ¼��
+D:\vs C++\HttpServer\main.c(12,2): warning :       |  ^~~~~~~~~~~~~~
+  server.c
+D:\vs C++\HttpServer\server.c(226,4): warning : implicit declaration of function ‘usleep’; did you mean ‘sleep’? [-Wimplicit-function-declaration]
+D:\vs C++\HttpServer\server.c(226,4): warning :   226 |    usleep(50);
+D:\vs C++\HttpServer\server.c(226,4): warning :       |    ^~~~~~
+D:\vs C++\HttpServer\server.c(226,4): warning :       |    sleep
+D:\vs C++\HttpServer\server.c(244,12): warning : implicit declaration of function ‘scandir’; did you mean ‘chdir’? [-Wimplicit-function-declaration]
+D:\vs C++\HttpServer\server.c(244,12): warning :   244 |  int num = scandir(dirName, &namelist, NULL, alphasort);
+D:\vs C++\HttpServer\server.c(244,12): warning :       |            ^~~~~~~
+D:\vs C++\HttpServer\server.c(244,12): warning :       |            chdir
+D:\vs C++\HttpServer\server.c(244,46): error : ‘alphasort’ undeclared (first use in this function)
+D:\vs C++\HttpServer\server.c(244,46): error :   244 |  int num = scandir(dirName, &namelist, NULL, alphasort);
+D:\vs C++\HttpServer\server.c(244,46): error :       |                                              ^~~~~~~~~
+D:\vs C++\HttpServer\server.c(244,46): message : each undeclared identifier is reported only once for each function it appears in
+D:\vs C++\HttpServer\server.c(322,10): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+D:\vs C++\HttpServer\server.c(322,10): warning :   322 |    *to = hexit(from[1]) * 16 + hexit(from[2]);
+D:\vs C++\HttpServer\server.c(322,10): warning :       |          ^~~~~
